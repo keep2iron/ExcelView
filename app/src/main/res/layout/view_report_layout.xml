@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <io.github.keep2iron.reportview.view.ReportContentView
+        android:id="@+id/fixedLeftTpoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+    </io.github.keep2iron.reportview.view.ReportContentView>
+
+    <io.github.keep2iron.reportview.view.ReportContentView
+        android:id="@+id/fixedHorizontalView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/fixedLeftTpoView">
+    </io.github.keep2iron.reportview.view.ReportContentView>
+
+    <io.github.keep2iron.reportview.view.ReportContentView
+        android:id="@+id/fixedVerticalView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fixedLeftTpoView">
+    </io.github.keep2iron.reportview.view.ReportContentView>
+
+    <io.github.keep2iron.reportview.view.ReportContentView
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fixedHorizontalView"
+        android:layout_toRightOf="@+id/fixedVerticalView">
+    </io.github.keep2iron.reportview.view.ReportContentView>
+</merge>
